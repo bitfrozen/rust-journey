@@ -1,0 +1,8 @@
+[build]
+rustflags = [
+    "-Dwarnings",                  # Deny all Rust compiler warnings
+    "-Dclippy::shadow_reuse",      # Deny reusing shadowed variables
+    "-Dclippy::shadow_same",       # Deny shadowing variables with the same name
+    "-Dclippy::shadow_unrelated",  # Deny shadowing unrelated variables
+    # Add more flags here as needed
+]
