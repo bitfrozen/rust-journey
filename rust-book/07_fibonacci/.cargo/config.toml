@@ -1,0 +1,10 @@
+[build]
+rustflags = [
+    "-Dwarnings",                  # Deny all Rust compiler warnings
+    "-Dclippy::implicit_return",   # Deny leaving out return statements at the end of a block
+    "-Aclippy::needless_return",   # Since we want to have explicit returns, allow returns that clippy might consider needless
+    "-Dclippy::shadow_reuse",      # Deny reusing shadowed variables
+    "-Dclippy::shadow_same",       # Deny shadowing variables with the same name
+    "-Dclippy::shadow_unrelated",  # Deny shadowing unrelated variables
+    # Add more flags here as needed
+]
